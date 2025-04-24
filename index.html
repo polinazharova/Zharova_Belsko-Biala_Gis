@@ -184,6 +184,7 @@
 
 <script>
 Q3D.Config.coord.latlon = true;
+Q3D.Config.localMode = true;
 Q3D.Config.animation.enabled = true;
 Q3D.Config.northArrow.enabled = true;
 Q3D.Config.northArrow.color = 0xff0105;
@@ -195,7 +196,7 @@ var container = document.getElementById("view"),
 app.init(container);    // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/index/scene.json", function (scene) {
+app.loadSceneFile("./data/index/scene.js", function (scene) {
   // scene file has been loaded
   app.start();
 
